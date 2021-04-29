@@ -16,5 +16,20 @@ def every_three_nums(start):
 # For example, the following code should return [4, 23, 42] because elements at indices 1, 2, and 3 have been removed:
 # remove_middle([4, 8 , 15, 16, 23, 42], 1, 3)
 
+def remove_middle(lst, start, end):
+  return lst[:start] + lst[end+1:]
 
+
+# More Frequent Item 
+# Create a function named more_frequent_item that has three parameters named lst, item1, and item2.
+# Return either item1 or item2 depending on which item appears more often in lst.
+# If the two items appear the same number of times, return item1.
+
+def more_frequent_item(lst, item1, item2):
+  if lst.count(item1) >= lst.count(item2):
+    return item1
+  else:
+    return item2
+
+    
 
