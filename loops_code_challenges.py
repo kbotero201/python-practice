@@ -40,6 +40,14 @@ print(over_nine_thousand([8000, 900, 120, 5000]))
 # The function should return the largest number in nums
 # Without using max()
 
+def max_num(nums):
+  maximum = nums[0]
+  for number in nums:
+    if number > maximum:
+      maximum = number
+  return maximum
+
+print(max_num([50, -10, 0, 75, 20]))
 
 
 # Same Values 
