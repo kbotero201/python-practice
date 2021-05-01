@@ -56,7 +56,14 @@ print(max_num([50, -10, 0, 75, 20]))
 # For example, the following code should return [0, 2, 3]
 # same_values([5, 1, -10, 3, 3], [5, 10, -10, 3, 5])
 
+def same_values(lst1, lst2):
+  new_lst = []
+  for index in range(len(lst1)):
+    if lst1[index] == lst2[index]:
+      new_lst.append(index)
+  return new_lst
 
+print(same_values([5, 1, -10, 3, 3], [5, 10, -10, 3, 5]))
 
 # Reversed List 
 # Create a function named reversed_list() that takes two lists of the same size as parameters named lst1 and lst2.
