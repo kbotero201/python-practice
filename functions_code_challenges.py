@@ -18,6 +18,12 @@ first_three_multiples(0)
 # Create a function called tip() that has two parameters named total and percentage.
 # This function should return the amount you should tip given a total and the percentage you want to tip.
 
+def tip(total, percentage):
+  tip_amount = (total * percentage) / 100
+  return tip_amount
+
+print(tip(10, 25))
+print(tip(0, 100))
 
 # Dog Years 
 # Some say that every one year of a human’s life is equivalent to seven years of a dog’s life. Write a function named dog_years() that has two parameters named name and age.
