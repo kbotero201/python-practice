@@ -30,6 +30,11 @@ print(tip(0, 100))
 # The function should compute the age in dog years and return the following string:
 # "{name}, you are {age} years old in dog years"
 
+def dog_years(name, age):
+  return name + ", you are " + str(age * 7) + " years old in dog years"
+
+print(dog_years("Lola", 16))
+print(dog_years("Baby", 0))
 
 # All Operations 
 # Create a function named lots_of_math(). This function should have four parameters named a, b, c, and d. The function should print 3 lines and return 1 value.
