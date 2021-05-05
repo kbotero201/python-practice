@@ -43,4 +43,15 @@ print(dog_years("Baby", 0))
 # Third, print the first number printed, multiplied by the second number printed.
 # Finally, return the third number printed modulo a.
 
+def lots_of_math(a, b, c, d):
+  first = a + b
+  second = c - d
+  third = first * second
+  fourth = third % a
+  print(first)
+  print(second)
+  print(third)
+  return fourth
 
+print(lots_of_math(1, 2, 3, 4))
+print(lots_of_math(1, 1, 1, 1))
