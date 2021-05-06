@@ -33,7 +33,15 @@ print(frequency_dictionary([0,0,0,0,0]))
 # Create a function named unique_values that takes a dictionary named my_dictionary as a parameter. 
 # The function should return the number of unique values in the dictionary.
 
+def unique_values(my_dictionary):
+  seen_values = []
+  for value in my_dictionary.values():
+    if value not in seen_values:
+      seen_values.append(value)
+  return len(seen_values)
 
+print(unique_values({0:3, 1:1, 4:1, 5:3}))
+print(unique_values({0:3, 1:3, 4:3, 5:3}))
 
 # Count First Letter
 # Create a function named count_first_letter that takes a dictionary named names as a parameter. names should be a dictionary where the key is a last name and the value is a list of first names. For example, the dictionary might look like this:
